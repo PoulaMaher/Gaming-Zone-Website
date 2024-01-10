@@ -1,0 +1,151 @@
+body {
+  background-color: aliceblue;
+}
+
+.form-area {
+  padding-top: 7%;
+}
+
+.form-area .container .row {
+  box-shadow: 0 2px 20px -5px black;
+}
+
+.left {
+  background-color: blueviolet;
+  padding: 200px 98px;
+  height: 100%;
+}
+
+.left h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: aliceblue;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.left span {
+  font-size: x-large;
+  margin-left: 30px;
+}
+
+.right {
+  padding: 70px 100px;
+  position: relative;
+}
+
+.right i {
+  position: absolute;
+  color: rgb(15, 22, 28);
+  font-size: 80px;
+  font-weight: bold;
+  left: -50px;
+  top: 40%;
+  animation: iconAnimation2 3s infinite;
+}
+.icon {
+  /* position: relative; */
+  position: absolute;
+  bottom: 150px;
+  left: -50px;
+
+  text-align: center;
+  display: inline-block;
+  font-family: "Font Awesome 2 Free";
+  font-weight: 900;
+  font-size: 50px;
+  color: #231615;
+}
+/* .hourglass{
+    width: 100px;
+    height: 50px;
+}
+.hourglass:before{
+    content: '\f251';
+    animation: iconAnimation2 3s infinite;
+    display: block;
+} */
+@keyframes iconAnimation2 {
+  0% {
+    /* content: '\f251'; */
+    transform: rotate(0deg);
+  }
+  /* 50%{
+        content: '\f252';
+        transform: rotate(45deg);
+    } */
+  /* 75%{
+        content: '\f253';
+        transform: rotate(90deg);
+    } */
+  100% {
+    /* content: '\f253'; */
+    transform: rotate(360deg);
+  }
+}
+
+.form-control {
+  border: 1px solid black;
+  /* margin-top: 10px; */
+}
+
+.right button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(21, 19, 19);
+  width: 180px;
+  color: aliceblue;
+  padding: 15px 0;
+  /* display: inline-block; */
+  font-size: 15px;
+  margin-top: 40px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 40%;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right button {
+    margin-left: 0px;
+  }
+  .left span {
+    margin: 0;
+  }
+}
+/* @media (min-width:767px) {
+    .left {
+        padding: 90px 15px;
+
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 25px;
+    }
+
+    .right {
+        padding: 25px;
+    }
+
+    .right i {
+        top: -25px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+
+    .right button {
+
+        width: 180px;
+        padding: 15px 0;
+    }
+
+}  */

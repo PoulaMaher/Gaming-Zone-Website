@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="player player1 playerActive" id="player1">
+            <h2 class="name" id="player1Name">Player 1 <span class="playHere"id="playHere1">Turn</span></h2>
+            <p class="score" id="player1Score">0</p>
+            <div class="current" id="player1Current">
+                <p class="currentLabel" id="player1CurrentLabel">Current</p>
+                <p class="currentScore" id="player1CurrentScore">0</p>
+            </div>
+        </section>
+        <section class="player player2" id="player2">
+            <h2 class="name" id="player1Name">Player 2 <span class="playHere hidden"id="playHere2">Turn</span></h2>
+            <p class="score" id="player2Score">0</p>
+            <div class="current" id="player2Current">
+                <p class="currentLabel" id="player2CurrentLabel">Current</p>
+                <p class="currentScore" id="player2CurrentScore">0</p>
+            </div>
+        </section>
+        <img src="images/dice-1.png" alt="Playing dice" class="dice hidden" />
+        <button class="btn btnNew">🔄 New Round</button>
+        <button class="btn btnRoll">🎲 Roll dice</button>
+        <button class="btn btnHold">📥 Hold</button>
+        <button class="btn btnExit">X Exit</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

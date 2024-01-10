@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming-Zone</title>
+  <link rel="icon" type="image/x-icon" href="imgs/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style class="internal-style">
+
+</style>
+
+<body>
+  <!-- * Loading  -->
+  <div class="loading-screen">
+
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
+    </div>
+
+  </div>
+  <!--!---------------------------  Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="imgs/logo-3.png" alt="" />
+
+
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="Our Team Page/ourTeam.html" target="_blank">Our Team</a>
+        </li>
+        <li>
+          <a href="Contact us form/contact_us.html" target="_blank">Contact US </a>
+        </li>
+        <li>
+          <a href="#" class="games">All Our Games </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <ul class="mini-menu">
+    <li>
+      <a href="Our Team Page/ourTeam.html" target="_blank">Our Team</a>
+    </li>
+    <li>
+      <a href="Contact us form/contact_us.html" target="_blank">Contact US </a>
+    </li>
+    <li>
+      <a class="all_our_game" href="#">All Our Games <span class="icon"></span> </a>
+    </li>
+  </ul>
+  <!--!-------------- All our Game ------------>
+  <ul class=" all-games">
+    <li>
+      <a href="how to play/Snake/index.html" target="_blank">🎮 Snake</a>
+    </li>
+    <li>
+      <a href="how to play/Rock Paper Scissor/index.html" target="_blank">🎮 Rock Paper Scissor </a>
+    </li>
+    <li>
+      <a href="how to play/Roll Dice/index.html" target="_blank">🎮 Roll Dice </a>
+    </li>
+    <li>
+      <a href="how to play//Tic Tac Toe/index.html" target="_blank">🎮Tic Tac Toe </a>
+    </li>
+  </ul>
+  <!--!---------------------------  Main Content -->
+  <section class="main-content">
+
+    <div class="list">
+      <!--* ========================= BOX =========================== -->
+      <div class="box tic-game">
+        <img src="imgs/c tac toe game.png" alt="snake game logo" />
+        <div class="text-content">
+          <div class="title">Tic Tac Toe</div>
+          <div class="description">
+            Classic Tic Tac Toe! Play against friends, sharpen your strategy, and claim victory. Ready to enjoy this
+            timeless game? Start playing now!
+          </div>
+          <button class="more-info">
+            <span>More Info</span>
+          </button>
+        </div>
+        <div class="detail">
+          <div class="title">Tic Tac Toe</div>
+          <div class="developer">Developed by : Mohamed Abdelraheem</div>
+          <div class="description">Rediscover the joy of the classic Tic Tac Toe game! Challenge friends, sharpen your
+            strategy, and claim victory in this timeless battle. Whether you're an expert or a beginner, the fun is
+            guaranteed. Ready to enjoy some friendly competition? Start playing now!</div>
+          <div class="btn-container">
+            <button class="how-to-play">How To Play</button>
+            <button class="play-now">PLay Now</button>
+          </div>
+        </div>
+      </div>
+      <!--* ========================= BOX =========================== -->
+      <div class="box snake-game">
+        <img src="imgs/SNAKE.png" alt="snake game logo" />
+        <div class="text-content">
+          <div class="title">The Snake</div>
+          <div class="description">
+            Play the mobile Snake game! Eat orbs, get bigger, navigate mazes. What are you waiting for? Try it now for
+            classic fun!
+          </div>
+          <button class="more-info">
+            More Info &#8599
+          </button>
+        </div>
+        <div class="detail">
+          <div class="title">The Snake</div>
+          <div class="developer">Developed by : Moudy Rasmy</div>
+          <div class="description">Join the mobile Snake adventure! Eat glowing orbs, grow bigger, navigate mazes with
+            easy controls. Classic fun meets modern excitement. What are you waiting for? Download now and enjoy the
+            thrill of Snake on your mobile device!.</div>
+          <div class="btn-container">
+            <button class="how-to-play">How To Play</button>
+            <button id="test" class="play-now">PLay Now</button>
+          </div>
+        </div>
+      </div>
+      <!--* ========================= BOX =========================== -->
+      <div class="box rps-game">
+        <img src="imgs/ock paper scissors.png" alt="snake game logo" />
+        <div class="text-content">
+          <div class="title">Rock Paper Scissor</div>
+          <div class="description">
+            Play Rock Paper Scissors! Quick, simple, and fun. Challenge friends for a classic showdown. What are you
+            waiting for? Play now
+          </div>
+          <button class="more-info">
+            More Info &#8599
+          </button>
+        </div>
+        <div class="detail">
+          <div class="title">Rock Paper Scissor</div>
+          <div class="developer">Developed by: Abader Esmat</div>
+          <div class="description">Engage in the timeless Rock Paper Scissors game! Quick, simple, and loads of fun.
+            Challenge friends for a classic showdown of wits and strategy. What are you waiting for? Test your luck and
+            skill—play now for instant entertainment!</div>
+          <div class="btn-container">
+            <button class="how-to-play">How To Play</button>
+            <button class="play-now">PLay Now</button>
+          </div>
+        </div>
+      </div>
+      <!--* ========================= BOX =========================== -->
+      <div class="box roll-dice-game">
+        <img src="imgs/roll dice game t 1.png" alt="snake game logo" />
+        <div class="text-content">
+          <div class="title">Roll Dice</div>
+          <div class="description">
+            Roll dice, race to 100! Exciting throw dice game. Who will reach 100 first? Start rolling now for thrilling
+            fun!
+          </div>
+          <button class="more-info">
+            More Info &#8599
+          </button>
+        </div>
+        <div class="detail">
+          <div class="title">Roll Dice</div>
+          <div class="developer">Developed by : Poula Maher</div>
+          <div class="description">Experience the thrill of our Throw Dice Game! Roll the dice, race to 100. Easy and
+            exciting. Who will reach 100 first? Challenge your friends and enjoy the excitement. Don't wait, start
+            rolling now for a fun and competitive gaming experience</div>
+          <div class="btn-container">
+            <button class="how-to-play">How To Play</button>
+            <button class="play-now">PLay Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="box">
+          <img src="imgs/c tac toe game.png" alt="snake game logo" />
+          <div class="text-content">
+            <div class="title">ADD GAme</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              natus, tenetur aliquam qui cum iure recusandae doloremque quasi
+              distinctio modi. Totam vel fugiat culpa dolorem temporibus
+              mollitia iste aperiam quos!
+            </div>
+            <button class="more-info">More info </button>
+          </div>
+          <div class="detail">
+            <div class="title">Game Name</div>
+            <div class="developer">Moudy Rasmy</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum est vel, sed excepturi optio quo odit distinctio blanditiis, debitis voluptatum harum vitae nihil pariatur corrupti dolore et, aspernatur tenetur! Dolor.</div>
+            <div class="btn-container">
+              <button class="how-to-play">How To Play</button>
+              <button class="play-now">PLay Now</button>
+            </div>
+          </div>
+        </div> -->
+    </div>
+    <div class="arrows">
+      <!-- <a href="#" class="prev"><i class="fa-solid fa-circle-arrow-left"></i></a> -->
+      <a href="#" class="prev"><img src="imgs/left.png" alt=""></a>
+      <button class="play-back">Play Now</button>
+      <!-- <a href="#" class="next"><i class="fa-solid fa-circle-arrow-right"></i></a> -->
+      <a href="#" class="next"><img src="imgs/right.png" alt=""></a>
+    </div>
+  </section>
+  </div>
+  <!-- =================================================================================  -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

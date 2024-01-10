@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="Game.CSS" />
+  </head>
+
+  <body>
+    <div class="Whole_body">
+      <div class="container">
+        <div class="ScoreBoard" style="position: relative" id="ScoreBoard">
+          <label for="ScoreBoard" id="labelScore">Score Board</label>
+
+          <ul style="display: flex; list-style-type: none">
+            <div class="vl"></div>
+
+            <li>
+              <b style="color: navy"> User</b>
+              <br />
+              <b> <p style="margin-left: 10px" id="User_result"></p></b>
+            </li>
+
+            <li style="margin-left: 105px">
+              <b style="color: navy">PC</b>
+              <br />
+
+              <b> <p style="margin-left: 10px" id="PC_result"></p></b>
+            </li>
+          </ul>
+        </div>
+        <div class="resultField">
+          <div class="resultImages">
+            <!-- <label for="">USER</label> -->
+            <span id="USER_Result" class="userResult">
+              <img src="477914-200.png" alt="" />
+              <p style="font-weight: bolder; font-size: x-large">User</p></span
+            >
+
+            <!-- <label id="CPU_Result">CPU</label> -->
+            <span class="cpuResult">
+              <img src="477914-200.png" alt="" />
+              <p style="font-weight: bolder; font-size: x-large">PC</p></span
+            >
+          </div>
+          <div class="result">Let's Play</div>
+        </div>
+
+        <div class="optionImages">
+          <span
+            class="optionImage"
+            title="On Click you choose And On  Double click remove choice"
+            ondblclick="RemoveChoice(this)"
+            onmouseover="imgHoverin(this)"
+            onmouseleave="imgHoverout(this)"
+            ><img src="477912-200.png" alt="" />
+            <p style="font-weight: bolder; font-size: x-large">Paper</p></span
+          >
+
+          <span
+            class="optionImage"
+            title="On Click you choose And On  Double click remove choice"
+            ondblclick="RemoveChoice(this)"
+            onmouseover="imgHoverin(this)"
+            onmouseleave="imgHoverout(this)"
+            ><img src="477914-200.png" alt="" />
+            <p style="font-weight: bolder; font-size: x-large">Rock</p>
+          </span>
+
+          <span
+            class="optionImage"
+            title="On Click you choose And On  Double click remove choice"
+            ondblclick="RemoveChoice(this)"
+            onmouseover="imgHoverin(this)"
+            onmouseleave="imgHoverout(this)"
+            ><img src="477919-200.png" alt="" />
+            <p style="font-weight: bolder; font-size: x-large">Scissors</p>
+          </span>
+        </div>
+        <!-- <div id="btnReset"><input type="button" value="Reset your Choice"></div> -->
+        <div id="btnReset" style="">
+          <input
+            type="button"
+            value="Reset Score"
+            onclick="RemoveChoice(this)"
+          />
+          <!-- <button id="logSelectedImg" style="    display: none; ">Log Selected Image</button> -->
+        </div>
+      </div>
+      <audio id="winSound">
+        <source src="مدحت شلبي _ برافو عليك.mp3" type="audio/ogg" />
+      </audio>
+      <audio id="LoseSound">
+        <source
+          src="احمد حلمي انا متضايق اوي _ ظرف طارق (64  kbps) (cdn.ytdl.rest).mp3"
+          type="audio/ogg"
+        />
+      </audio>
+    </div>
+
+    <script src="Game.JS"></script>
+  </body>
+</html>
